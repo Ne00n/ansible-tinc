@@ -114,7 +114,7 @@
 
 - name: ensure tinc is started
   service: >
-    name=tinc
+    name=tinc@vpn0
     enabled=yes
     state=started
     pattern=tincd -n {{ vpn_interface }}
